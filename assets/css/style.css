@@ -23,7 +23,9 @@
   --nav-btn: #3d3e41;
   --light-gray: #9fa2a7;
   --space-l-r: 0 5vw;
+  --bg-gray: #f1f1f4;
 }
+
 a {
   text-decoration: none;
   color: var(--basic-col);
@@ -33,6 +35,29 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  color: var(--basic-col);
+}
+
+.h2_main {
+  font-size: 3rem;
+  font-weight: lighter;
+  font-family: "Regular";
+}
+
+h3 {
+  font-size: 5rem;
+}
+
+.p_main {
+  font-size: 2rem;
+}
+
+.gray {
+  color: var(--light-gray);
+  line-height: 3rem;
 }
 
 html {
@@ -60,17 +85,14 @@ img {
   gap: 20%;
 }
 
-h1 {
-  color: var(--basic-col);
-}
-
 .hero-btn {
-  color: black;
+  color: var(--light-gray);
   border: 1px solid var(--nav-btn);
   border-radius: 2px;
   font-size: 1.7rem;
   background-color: white;
-  padding: 5px 25px;
+  width: 18rem;
+  height: 3rem;
   cursor: pointer;
 }
 
@@ -86,33 +108,65 @@ section {
   margin-bottom: 100px;
 }
 
-h2 {
-  font-size: 3rem;
-  font-weight: lighter;
-  font-family: "Regular";
+.h2_first {
   text-align: center;
 }
 
 .first-sec-text {
-    display: flex;
-    width: 70%;
-    margin: var(--space-l-r);
-    gap: 10%;
-    margin-bottom: 150px;
+  display: flex;
+  width: 70%;
+  margin: var(--space-l-r);
+  gap: 10%;
+  margin-bottom: 150px;
 }
 
 .first-P {
-    font-size: 2.1rem;
-    color: var(--basic-col);
-    font-family: "Regular";
-    line-height: 3rem;
+  font-size: 2.1rem;
+  color: var(--basic-col);
+  font-family: "Regular";
+  line-height: 3rem;
 }
 
-h3 {
-    font-size: 5rem;
+.first-sec-text div p {
+  color: var(--light-gray);
 }
 
-.price-P {
-    color: var(--light-gray);
-    font-size: 2rem;
+/* # second main  */
+.sec-sec {
+  display: flex;
+  position: relative;
+  margin: var(--space-l-r);
+  margin-bottom: 150px;
+}
+
+.sec-sec img {
+  position: absolute;
+  width: 50%;
+}
+
+.sec-sec-text {
+  z-index: 1;
+  margin-left: 48%;
+}
+
+.sec-sec-text h3 {
+  margin-bottom: 60px;
+}
+
+.sec-sec-text h2 {
+  margin-bottom: 20px;
+}
+
+/* #How It Works */
+
+.howitworks {
+  display: flex;
+  margin: var(--space-l-r);
+  background-color: var(--bg-gray);
+  justify-content: space-between;
+}
+
+.howitworks img {
+  width: 50%;
+  position: relative;
 }
