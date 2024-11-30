@@ -53,6 +53,7 @@ h3 {
 
 .p_main {
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .gray {
@@ -120,10 +121,10 @@ section {
   margin-bottom: 150px;
 }
 
-.first-P {
-  font-size: 2.1rem;
+.line-height-P1 {
+  /* font-size: 2.1rem;
   color: var(--basic-col);
-  font-family: "Regular";
+  font-family: "Regular"; */
   line-height: 3rem;
 }
 
@@ -137,16 +138,22 @@ section {
   position: relative;
   margin: var(--space-l-r);
   margin-bottom: 150px;
+  flex-direction: column;
 }
 
 .sec-sec img {
-  position: absolute;
+  position: relative;
   width: 50%;
+  /* height: 625px; */
 }
 
 .sec-sec-text {
   z-index: 1;
   margin-left: 48%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .sec-sec-text h3 {
@@ -164,9 +171,23 @@ section {
   margin: var(--space-l-r);
   background-color: var(--bg-gray);
   justify-content: space-between;
+  margin-bottom: 130px;
 }
 
 .howitworks img {
   width: 50%;
   position: relative;
+}
+
+.HIW-text-style {
+    padding: 55px;
+}
+
+.howitworks h3, .howitworks p {
+ padding: 20px;   
+}
+
+.text-style-hiw {
+    position: relative;
+    left: 6rem;
 }
