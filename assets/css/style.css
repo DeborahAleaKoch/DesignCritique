@@ -18,6 +18,11 @@
   src: url("../fonts/TiemposHeadline-Semibold.woff");
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf");
+}
+
 :root {
   --basic-col: #2b2c2e;
   --nav-btn: #3d3e41;
@@ -53,7 +58,7 @@ h3 {
 
 .p_main {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .gray {
@@ -64,7 +69,8 @@ h3 {
 html {
   font-size: 10px;
   scroll-behavior: smooth;
-  font-family: "Graphik-Medium";
+  /* font-family: "Graphik-Medium"; */
+  font-family: "Inter";
 }
 
 img {
@@ -72,6 +78,11 @@ img {
 }
 
 /* # header */
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
 
 .nav-bar {
   display: flex;
@@ -144,7 +155,6 @@ section {
 .sec-sec img {
   position: relative;
   width: 50%;
-  /* height: 625px; */
 }
 
 .sec-sec-text {
@@ -180,14 +190,87 @@ section {
 }
 
 .HIW-text-style {
-    padding: 55px;
+  padding: 55px;
 }
 
-.howitworks h3, .howitworks p {
- padding: 20px;   
+.howitworks h3,
+.howitworks p {
+  padding: 20px;
 }
 
 .text-style-hiw {
-    position: relative;
-    left: 6rem;
+  position: relative;
+  left: 6rem;
+}
+
+/* #Critique  */
+
+.critique {
+  /* border: 2px solid pink; */
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.critique h2 {
+  margin-bottom: 40px;
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+/* # Rollerguy */
+
+.rollerGuy {
+  margin: var(--space-l-r);
+  border-bottom: #3d3e41 1px solid;
+  margin-bottom: 10rem;
+}
+
+.rollerGuy-text img {
+  width: 50%;
+  position: relative;
+  top: -80px;
+  left: -85px;
+}
+
+.rollerGuy-text {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rollerGuy-text article {
+  /* margin-top: 5rem; */
+  position: relative;
+  top: 4rem;
+  left: 3rem;
+  z-index: 2;
+}
+
+/* # Footer */
+.costumeGuy-sec {
+  text-align: center;
+}
+
+.costumeGuy-sec h2 {
+  font-size: 4.8rem;
+  margin-bottom: 4.3rem;
+}
+
+.costumeGuy-sec article {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: end;
+}
+
+.costumeGuy-sec article p {
+  position: relative;
+  font-size: 1.6rem;
+}
+
+.costumeGuy-sec img {
+  width: 10%;
+}
+
+.costumeGuy-sec article a {
+  font-weight: 900;
 }
